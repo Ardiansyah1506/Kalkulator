@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    background-color: aqua;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.kalkulator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: wheat;
+    box-shadow: 0 0 30px black;
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: wheat;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.theme-toggler.active::before {
+    background-color: wheat;
+}
+
+.theme-toggler::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50, -50%);
+    background-color: grey;
+    z-index: -1;
+}
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 130px;
+}
+
+.kalkulator {
+    background-color: white;
+}
+
+.kalkulator #display {
+    color: black;
+}
+
+.kalkulator .buttons .btn-number {
+    color: black;
+    background-color: aqua;
+}
+
+.kalkulator .buttons .btn-operator {
+    background-color: blueviolet;
+}
+
+.kalkulator .buttons#clear {
+    color: crimson;
+    background-color: blueviolet;
+}
+
+
+/* tema gelap */
+
+.kalkulator.dark {
+    background-color: black;
+}
+
+.kalkulator.dark #display {
+    color: whitesmoke;
+}
+
+.kalkulator.dark button#clear {
+    background-color: black;
+    color: white;
+}
+
+.kalkulator.dark button.btn-number {
+    background-color: darkorchid;
+    color: white;
+}
+
+.kalkulator.dark button.btn-operator {
+    background-color: brown;
+    color: pink;
+}
+
+.kalkulator.dark button.btn-equal {
+    background-color: green;
+    color: wheat;
+}

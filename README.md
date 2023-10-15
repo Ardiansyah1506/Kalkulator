@@ -12,7 +12,7 @@ The "Simple Calculator" project is a web application built with HTML, CSS, and J
 
 - **Light & Dark Themes**: The application includes two display themes that users can switch between: a light theme and a dark theme.
 
-## Technology
+## Tech
 
 - **HTML**: Used to create the calculator's structure.
 

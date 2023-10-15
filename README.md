@@ -1,6 +1,6 @@
 # Simple Calculator
 
-[Live View](https://ardiansyah1506.github.io/kalkulator)
+[Live View](https://ardiansyah1506.github.io/Kalkulator)
 
 ## Overview
 
